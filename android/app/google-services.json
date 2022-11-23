@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1092192073918",
+    "project_id": "desafio-brisanet",
+    "storage_bucket": "desafio-brisanet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092192073918:android:eab25dfcde4b483ba406ef",
+        "android_client_info": {
+          "package_name": "com.example.desafio_brisanet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092192073918-45265j04ag4cbtdfgbkf50tvcqked9u6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCewzslEKtYHz138oEfLYM8aNT9n-4I5o4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092192073918-45265j04ag4cbtdfgbkf50tvcqked9u6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
