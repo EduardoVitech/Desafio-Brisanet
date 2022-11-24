@@ -1,10 +1,13 @@
 import 'package:desafio_brisanet/screens/empty_favorites_screen/empty_favorites_screen.dart';
+import 'package:desafio_brisanet/screens/search_screen/search_screen.dart';
+import 'package:desafio_brisanet/screens/see_all_screen/see_all_screen.dart';
 import 'package:desafio_brisanet/utils/colors.dart';
 import 'package:desafio_brisanet/widgets/botton_bar/botton_bar.dart';
 import 'package:desafio_brisanet/widgets/top_bar/top_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
+  static String routeName = '/homeScreen';
   const HomeScreen({super.key});
 
   @override
@@ -28,13 +31,45 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           TopBar(
-            onTap: () {},
+            onTap1: () {
+              setState(() {
+                option = 1;
+              });
+            },
+            onTap2: () {
+              setState(() {
+                option = 2;
+              });
+            },
+            onTap3: () {
+              setState(() {
+                option = 3;
+              });
+            },
             option: option,
           ),
-          Expanded(
-            child: EmptyFavorites(),
-          ),
-          BottonBar(),
+          //
+          // Telas
+          //
+          if (option == 1)
+            Expanded(
+              child: EmptyFavorites(
+                searchButton: () {
+                  setState(() {
+                    option = 2;
+                  });
+                },
+              ),
+            ),
+          if (option == 2)
+            Expanded(
+              child: SearchScreen(),
+            ),
+          if (option == 3)
+            const Expanded(
+              child: SeeAllScreen(),
+            ),
+          const BottonBar(),
         ],
       ),
     );

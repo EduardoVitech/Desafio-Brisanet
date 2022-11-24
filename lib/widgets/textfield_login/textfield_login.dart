@@ -22,6 +22,10 @@ class TextFieldLogin extends StatelessWidget {
           fillColor: Colors.white,
           filled: true,
           hintText: hintText,
+          focusedBorder: OutlineInputBorder(
+            borderSide: const BorderSide(width: 1, color: Colors.grey),
+            borderRadius: BorderRadius.circular(8),
+          ),
           enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(width: 1, color: Colors.grey),
             borderRadius: BorderRadius.circular(8),

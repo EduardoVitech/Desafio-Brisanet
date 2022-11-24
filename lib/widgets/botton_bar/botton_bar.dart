@@ -1,3 +1,4 @@
+import 'package:desafio_brisanet/utils/firebase_constants.dart';
 import 'package:desafio_brisanet/widgets/button_exite/button_exite.dart';
 import 'package:desafio_brisanet/widgets/button_theme/button_theme.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class BottonBar extends StatelessWidget {
               onPressed: () {},
             ),
             ButtonExite(
-              onPressed: () {},
+              onPressed: () => authController.signOut(),
             ),
           ],
         ),

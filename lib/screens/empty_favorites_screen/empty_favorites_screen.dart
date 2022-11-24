@@ -2,7 +2,11 @@ import 'package:desafio_brisanet/widgets/button_search/button_search.dart';
 import 'package:flutter/material.dart';
 
 class EmptyFavorites extends StatelessWidget {
-  const EmptyFavorites({super.key});
+  final void Function()? searchButton;
+  const EmptyFavorites({
+    super.key,
+    required this.searchButton,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -49,8 +53,10 @@ class EmptyFavorites extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 30),
-          const Center(
-            child: ButtonSearch(),
+          Center(
+            child: ButtonSearch(
+              searchButton: searchButton,
+            ),
           ),
         ],
       ),

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class ButtonSearch extends StatelessWidget {
-  final Function()? onPressed;
+  final void Function()? searchButton;
   const ButtonSearch({
     super.key,
-    this.onPressed,
+    required this.searchButton,
   });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: onPressed,
+      onPressed: searchButton,
       style: ButtonStyle(
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(

@@ -19,7 +19,8 @@ class ButtonExite extends StatelessWidget {
             side: const BorderSide(color: buttonExiteText, width: 1),
           ),
         ),
-        backgroundColor: const MaterialStatePropertyAll<Color>(Colors.white),
+        backgroundColor: const MaterialStatePropertyAll<Color>(
+            Color.fromARGB(255, 250, 248, 248)),
       ),
       child: Row(
         children: const [

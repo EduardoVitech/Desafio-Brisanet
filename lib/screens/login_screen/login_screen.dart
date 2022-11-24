@@ -5,7 +5,8 @@ import 'package:desafio_brisanet/widgets/button_theme/button_theme.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
-  LoginScreen({super.key});
+  static String routeName = '/';
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();

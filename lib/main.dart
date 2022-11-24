@@ -1,5 +1,8 @@
 import 'package:desafio_brisanet/controllers/auth_controller/auth_controller.dart';
+import 'package:desafio_brisanet/screens/home_screen/home_screen.dart';
 import 'package:desafio_brisanet/screens/login_screen/login_screen.dart';
+import 'package:desafio_brisanet/utils/colors.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -38,10 +41,14 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Desafio Brisanet',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      theme: ThemeData.light().copyWith(
+        backgroundColor: Colors.white,
       ),
-      home: LoginScreen(),
+      initialRoute: LoginScreen.routeName,
+      routes: {
+        LoginScreen.routeName: (context) => const LoginScreen(),
+        HomeScreen.routeName: (context) => const HomeScreen(),
+      },
     );
   }
 }
