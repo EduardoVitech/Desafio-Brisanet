@@ -57,17 +57,3 @@ class _SeeAllScreenState extends State<SeeAllScreen> {
     );
   }
 }
-
-
-
-
-      /* ontap: () => Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => DetailsPage(
-                    id: posts.id.toString(),
-                    userId: posts.userId.toString(),
-                    title: posts.title,
-                    body: posts.body,
-                  ),
-                ),
-              ), */
