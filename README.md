@@ -11,5 +11,5 @@ App para listagem de pokémons desenvolvido em Flutter.
   - ![Favoritos](./assets/readme/favoritos.png)
   
 - ## Search
-  - ![Search](./assets/readme/pesquisar.png)  
+  - ![Search](./assets/readme/pesquisa.png)  
 
