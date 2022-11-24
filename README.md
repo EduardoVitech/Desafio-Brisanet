@@ -5,11 +5,11 @@ App para listagem de pokémons desenvolvido em Flutter.
 # Telas
 
 - ## Login
-  - ![Login](./assets/readme/login.png)
+  - ![Login](./assets/login.png)
   
 - ## Home
-  - ![Favoritos](./assets/readme/favoritos.png)
+  - ![Favoritos](./assets/favoritos.png)
   
 - ## Search
-  - ![Search](./assets/readme/pesquisa.png)  
+  - ![Search](./assets/pesquisa.png)  
 
